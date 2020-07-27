@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+	<title>SmashZone-Contact Us</title>
+<style>
+form { 
+background-color: #ffffff;
+color: #000000;
+width: 100%;
+border-radius: 20px;
+}
+
+button, input[type=submit], input[type=reset] {
+	background-color: #439cfe;
+	padding:16px 32px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+textarea {
+background-color: #ffffff;
+color: #000000;
+border: 2px solid #ab3ea7;
+}
+
+input[type=number] {
+background-color: #00ff18;
+}
+
+select {
+width: 50%;
+border: 1px solid #000000;
+border-radius; 1px;
+background-color; #439cfe;
+}
+
+input {
+border: 1px solid #ab3ea7;
+padding: 10px 15px;
+margin: 8px 0;
+}
+ 
+
+input[type=email] { 
+background-color: #ffffff;
+}
+
+label { 
+color: #04b404;
+}
+
+</style>
+</head>
+<body>
+	<header><h1>Conact Us</h1><img src="images/logo.jpg" alt="SmashZone Logo" width="128" height="146"></header>
+	<nav>
+	<ul>
+	  <li><a href="index.html">Home Page</a></li>
+	  <li><a href="aboutus.html">About Us</a></li>
+	  <li><a href="history.html">History</a></li>
+	  <li><a href="menu.html">Menu</a></li>
+	  <li><a href="contactus.html">Contact Us</a></li>
+	  <li><a href="chef.html">Craven's Corner</a></li>
+	  <li><a href="nutrition.html">Nutrition</a></li>
+	</ul>	
+</nav>
+	<main>
+		<h2>Your Opinion Matters</h2>
+	<form action= "#" method="post" autocomplete="on">
+	<label>First Name:</label><br>
+	<input type="text" name="first_name" required><br>
+	<label>Last Name:</label><br>
+	<input type="text" name="last_name" required><br>
+	<p>
+	<label>Gender</label>
+		<input type="radio"
+		name="radsize"
+		id="sizeSmall"
+		value="male"
+		checked="checked"/>
+		<label for="sizeSmall">male</label>
+		
+		<input type="radio"
+		name="radsize"
+		id="sizemed"
+		value="female"/>
+		<label for="sizemed">female</label>
+			
+		<input type="radio"
+		name="radSize"
+		id="sizelarge "
+		value="Other"/>
+		<label for="sizeLarge">other</label>
+	</p>
+	
+	<p>
+	<label>Favorite Color(s)</label>
+		<input type="checkbox"
+		name="color1"
+		id="grn"
+		value="green"/>
+		<label for="age1">Green</label>
+		
+		<input type="checkbox"
+		name="color2"
+		id="red" 
+		value="Red"/>
+		<label for="age2">Red</label>
+	
+		<input type="checkbox"
+		name="color3"
+		id="org" 
+		value="Orange"/>
+		<label for="age2">Orange</label>
+		
+		<input type="checkbox"
+		name="color4"
+		id="blu" 
+		value="blue"/>
+		<label for="age2">Blue</label>
+	</p>
+	
+	<p>
+	<label>Are you 18 years of age?</label>
+		<select id = "myList">
+		name="age"
+			<option value="grn">I am 18</option>
+			<option value="red">I am not 18</option>
+			</select>
+	</p>
+	
+	<label>Email:</label>
+		<input type ="email" name ="email" required autocomplete ="off"/>
+	<label>Phone:</label>
+		<input type ="tel" name="phone"/><br>
+	<label>Comments:</label><br>
+		<textarea name ="comments" cols="58" rows="10"></textarea><br>	
+		
+		<h3> Enter a four-digit passcode, then click OK:</h3>
+		<input id ="id1" type ="number" min ="1000" max ="9999"/>
+	<button onclick = "myFunction()"type ="button">OK</button>
+	<p id = "passcode"></p>
+	
+	<script>
+		function myFunction() {
+		var inpObj = document.getElementById("id1); 
+			if (inpObj.checkValidity() == false )
+			document.getElementById("passcode").innerHTML = inpObj.validationMessage;
+			} else {
+			document.getElementById("passcode").innerHTML = "Passcode Valid";
+			}
+			
+	</script>
+	<input type="reset" value="Reset Form">  <input type="submit" value="Submit Form"> 
+</form>
+</main>
+	<footer>
+<div class = "navbar">
+	<nav>
+	  <a href = "index.html">Home Page</a>
+	  <a href = "aboutus.html">About Us</a>
+	  <a href = "history.html">History</a>
+	  <a href = "menu.html">Menu</a>
+	  <a href = "contactus.html">Contact Us</a>
+	  <a href = "chef.html">Craven's Corner</a>
+	  <a href = "nutrition.html">Nutrition</a>	
+</nav>
+
+</div>
+</footer>
+</body>
+</html>
